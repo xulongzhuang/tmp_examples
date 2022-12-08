@@ -1,0 +1,212 @@
+entry 0x40080648
+I (27) boot: ESP-IDF v5.1-dev-1232-g6cfa88ed49-dirty 2nd stage bootloader
+I (27) boot: compile time Dec  8 2022 20:11:10
+I (30) boot: chip revision: V000
+I (35) boot.esp32: SPI Speed      : 40MHz
+I (38) boot.esp32: SPI Mode       : DIO
+I (43) boot.esp32: SPI Flash Size : 2MB
+I (47) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+I (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (78) boot:  2 factory          factory app      00 00 00010000 00100000
+I (86) boot: End of partition table
+I (90) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1dc38h (121912) map
+I (143) esp_image: segment 1: paddr=0002dc60 vaddr=3ffbdb60 size=023b8h (  9144) load
+I (146) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=7d610h (513552) map
+I (334) esp_image: segment 3: paddr=000ad638 vaddr=3ffbff18 size=026c0h (  9920) load
+I (338) esp_image: segment 4: paddr=000afd00 vaddr=40080000 size=174b8h ( 95416) load
+I (379) esp_image: segment 5: paddr=000c71c0 vaddr=50000000 size=00010h (    16) load
+I (391) boot: Loaded app from partition at offset 0x10000
+I (391) boot: Disabling RNG early entropy source...
+I (403) cpu_start: Pro cpu up.
+I (403) cpu_start: Starting app cpu, entry point is 0x400812cc
+0x400812cc: call_start_cpu1 at /home/xulongzhuang/esp/esp-idfs/esp-idfm/components/esp_system/port/cpu_start.c:146
+
+I (0) cpu_start: App cpu up.
+I (419) cpu_start: Pro cpu start user code
+I (419) cpu_start: cpu freq: 160000000 Hz
+I (419) cpu_start: Application information:
+I (424) cpu_start: Project name:     gatt_server_demos
+I (430) cpu_start: App version:      v5.1-dev-1232-g6cfa88ed49-dirty
+I (437) cpu_start: Compile time:     Dec  8 2022 20:11:02
+I (443) cpu_start: ELF file SHA256:  c10023f498579dae...
+I (449) cpu_start: ESP-IDF:          v5.1-dev-1232-g6cfa88ed49-dirty
+I (456) heap_init: Initializing. RAM available for dynamic allocation:
+I (463) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (469) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (475) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (481) heap_init: At 3FFC6EE8 len 00019118 (100 KiB): DRAM
+I (488) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (494) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (500) heap_init: At 400974B8 len 00008B48 (34 KiB): IRAM
+I (508) spi_flash: detected chip: gd
+I (511) spi_flash: flash io: dio
+W (515) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (529) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (578) BTDM_INIT: BT controller compile version [9a31e07]
+I (578) system_api: Base MAC address is not set
+I (578) system_api: read default base MAC address from EFUSE
+I (588) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07
+I (1068) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0
+
+I (1078) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40
+
+I (1078) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 1
+
+I (1088) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40
+
+I (1098) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+
+I (1098) GATTS_DEMO: the gatts demo char length = 3
+
+I (1108) GATTS_DEMO: prf_char[0] =11
+
+I (1108) GATTS_DEMO: prf_char[1] =22
+
+I (1108) GATTS_DEMO: prf_char[2] =33
+
+I (1118) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 44
+
+I (1128) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+
+I (1128) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 44
+
+I (1138) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44
+
+I (1148) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44
+
+I (10248) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 62:f8:2b:fe:ff:74:
+I (10258) GATTS_DEMO: CONNECT_EVT, conn_id 0, remote 62:f8:2b:fe:ff:74:
+I (10918) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 30,latency = 0, timeout = 400
+I (11758) GATTS_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500
+I (11988) GATTS_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 12,latency = 0, timeout = 500
+I (16218) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 1, handle 46
+
+I (16218) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16218) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16228) GATTS_DEMO: 37 38 39 30 
+I (16268) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 2, handle 46
+
+I (16268) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16268) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16278) GATTS_DEMO: 37 38 39 30 
+I (16358) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 3, handle 46
+
+I (16358) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16358) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16368) GATTS_DEMO: 37 38 39 30 
+I (16448) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 4, handle 46
+
+I (16448) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16448) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16458) GATTS_DEMO: 37 38 39 30 
+I (16488) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 5, handle 46
+
+I (16488) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16488) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16498) GATTS_DEMO: 37 38 39 30 
+I (16538) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 6, handle 46
+
+I (16538) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16538) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16548) GATTS_DEMO: 37 38 39 30 
+I (16578) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 7, handle 46
+
+I (16578) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16578) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16588) GATTS_DEMO: 37 38 39 30 
+I (16628) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 8, handle 46
+
+I (16628) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16628) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16638) GATTS_DEMO: 37 38 39 30 
+I (16688) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 9, handle 46
+
+I (16688) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16688) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16698) GATTS_DEMO: 37 38 39 30 
+I (16728) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 10, handle 46
+
+I (16728) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16728) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16738) GATTS_DEMO: 37 38 39 30 
+I (16788) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 11, handle 46
+
+I (16788) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16788) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16798) GATTS_DEMO: 37 38 39 30 
+I (16838) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 12, handle 46
+
+I (16838) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16838) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16848) GATTS_DEMO: 37 38 39 30 
+I (16878) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 13, handle 46
+
+I (16878) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16878) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16888) GATTS_DEMO: 37 38 39 30 
+I (16928) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 14, handle 46
+
+I (16928) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16928) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16938) GATTS_DEMO: 37 38 39 30 
+I (16988) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 15, handle 46
+
+I (16988) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (16988) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (16998) GATTS_DEMO: 37 38 39 30 
+I (17048) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 16, handle 46
+
+I (17048) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17048) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17058) GATTS_DEMO: 37 38 39 30 
+I (17108) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 17, handle 46
+
+I (17108) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17108) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17118) GATTS_DEMO: 37 38 39 30 
+I (17148) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 18, handle 46
+
+I (17148) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17148) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17158) GATTS_DEMO: 37 38 39 30 
+I (17208) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 19, handle 46
+
+I (17208) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17208) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17218) GATTS_DEMO: 37 38 39 30 
+I (17258) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 20, handle 46
+
+I (17258) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17258) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17268) GATTS_DEMO: 37 38 39 30 
+I (17298) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 21, handle 46
+
+I (17298) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17298) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17308) GATTS_DEMO: 37 38 39 30 
+I (17338) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 22, handle 46
+
+I (17348) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17348) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17358) GATTS_DEMO: 37 38 39 30 
+I (17408) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 23, handle 46
+
+I (17408) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17408) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17418) GATTS_DEMO: 37 38 39 30 
+I (17448) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 24, handle 46
+
+I (17448) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17448) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17458) GATTS_DEMO: 37 38 39 30 
+I (17498) GATTS_DEMO: GATT_WRITE_EVT, conn_id 0, trans_id 25, handle 46
+
+I (17498) GATTS_DEMO: GATT_WRITE_EVT, value len 20, value :
+I (17498) GATTS_DEMO: 31 32 33 34 35 36 37 38 39 30 31 32 33 34 35 36 
+I (17508) GATTS_DEMO: 37 38 39 30 
+
+Done
